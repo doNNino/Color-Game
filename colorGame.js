@@ -35,6 +35,7 @@ easy.addEventListener("click", function(){
 	squares = 3;
 	colors = clrs(squares);
 	pickedClr = pckdClr(colors);
+	info.textContent = pickedClr;
 	for(var i = 0; i < colors.length; i++){
 	boxicArr[i].style.backgroundColor = colors[i];
 	easy.classList.add("active");
@@ -49,6 +50,7 @@ hard.addEventListener("click", function(){
  squares = 6;
  colors = clrs(squares);
 	pickedClr = pckdClr(colors);
+	info.textContent = pickedClr;
 	easy.classList.remove("active");
 	hard.classList.add("active");
 	for(var i = 0; i < colors.length; i++){
@@ -61,6 +63,7 @@ newColor.addEventListener("click", function(){
 	head.style.backgroundColor = "rgb(37, 77, 140)";
 	colors = clrs(squares);
 	pickedClr = pckdClr(colors);
+	info.textContent = pickedClr;
 	for(var i = 0; i < colors.length; i++){
 	boxicArr[i].style.backgroundColor = colors[i];
 }
